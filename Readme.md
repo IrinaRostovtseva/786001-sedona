@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ирина Ростовцева](https://up.htmlacademy.ru/htmlcss/22/user/786001).
-* Наставник: `Александр Горбачев ` (https://up.htmlacademy.ru/htmlcss/22/user/92028).
+* Наставник: [Александр Горбачев] (https://up.htmlacademy.ru/htmlcss/22/user/92028).
 
 ---
 
