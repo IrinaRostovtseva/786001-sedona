@@ -6,116 +6,108 @@
   </head>
   <body>
 	<!-- шапка сайта -->
-		<header class='main-header'>
-			<a href='index.html'class='logo'><img src='img/logo.png' width='' height='' alt='логотип Седона'></a>
-			<nav class='main-navigation'>
-				<ul class='site-navigation'>
-					<li>
-						<a href='info.html'>информация</a>
+		<header class="main-header">
+			<a href="index.html" class="logo"><img src="img/logo.png" width="" height="" alt="логотип Седона"></a>
+			<nav class="main-navigation">
+				<ul class="site-navigation">
+					<li class="site-navigation-item">
+						<a href="info.html">информация</a>
 					</li>
-					<li>
-						<a href='photo-video.html'>фото и видео</a>
+					<li class="site-navigation-item">
+						<a href="photo-video.html">фото и видео</a>
 					</li>
-					<li>
-						<a href='state-map.html'>карта штата</a>
+					<li class="site-navigation-item">
+						<a href="state-map.html">карта штата</a>
 					</li>
-					<li class='site-navigation-current'>гостиницы</li>
+					<li class="site-navigation-current">гостиницы</li>
 				</ul>
 			</nav>
 		</header>
-		</main class='container'>
-			<h1 class='visually-hidden'>Поиск гостиницы в Седоне</h1>
-			<section class='search-block-filters'>
-				<h2 class='visually-hidden'>Фильтры поиска гостиницы</h2>
+		<main class="main-content">
+			<h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
+			<section class="search-block-filters">
+				<h2 class="visually-hidden">Фильтры поиска гостиницы</h2>
 			<!-- Форма для фильтров -->
 			</section>
 			<!-- блок каталога -->
-			<section class='hotels-catalog'>
+			<section class="hotels-catalog">
 			<!-- шапка с сортировкой -->
-				<header class='hotels-catalog-header'>
-					<h2 class='visually-hidden'>Каталог гостиниц</h2>
-					<p class='found'>Найдено: 3</p>
-					<p class='sorting'>
+				<div class="hotels-catalog-header">
+					<h2 class="visually-hidden">Каталог гостиниц</h2>
+					<p class="found">Найдено: 3</p>
+					<p class="sorting">
 						<b>сортировка:</b>
-						<span class='sortintg-active'>по цене</span>
-						<span>по типу</span>
-						<span>по рейтингу</span>
+						<a href="#" class="sortintg-active">по цене</a>
+						<a href="#">по типу</a>
+						<a href="#">по рейтингу</a>
 					</p>
-					<p class='type-sorting'>
-						<span class='type-sorting-arrow arrow-up'>по возрастанию<span>
-						<span class='type-sorting-arrow arrow-down'>по убыванию<span>
+					<p class="type-sorting">
+						<a href="#" class="type-sorting-arrow arrow-up">по возрастанию</a>
+						<a href="#" class="type-sorting-arrow arrow-down">по убыванию</a>
 					</p>
-				</header>
-				<ul class='hotels-catalog-list'>
-					<li class='hotels-catalog-item'>
-						<figure>
-							<img src='img/amara-hotel.jpg' width='' height='' alt='Отель Amara resort & spa'>
-							<figcaption>
+				</div>
+				<ul class="hotels-catalog-list">
+					<li class="hotels-catalog-item">
+							<img src="img/amara-hotel.jpg" width="" height="" alt="Отель Amara resort & spa">
+							<div>
 								<h3>Amara resort &amp; spa</h3>
-								<span class='hotel-type'>гостиница</span>
-								<span class='hotel-price'>от 4000 р.</span>
-								<a href='catalog-item.html' class='btn btn-details'>подробнее</a>
-								<a href='catalog-item.html' class='btn btn-reserve'>забронировать</a>
-							</figcaption>
-						</figure>
-						<p class='hotel-rating-area'>
-							<span class='hotel-rank-star'>4*</span>
-							<span class='hotel-rating'>рейтинг: 8,5</span>
+								<span class="hotel-type">гостиница</span>
+								<span class="hotel-price">от 4000 р.</span>
+								<a href="catalog-item.html" class="btn btn-details">подробнее</a>
+								<a href="catalog-item.html" class="btn btn-reserve">забронировать</a>
+							</div>
+						<p class="hotel-rating-area">
+							<span class="hotel-rank-star">4*</span>
+							<span class="hotel-rating">рейтинг: 8,5</span>
 						</p>
 					</li>
-					<li class='hotels-catalog-item'>
-						<figure>
-							<img src='img/desert-quail-inn.jpg' width='' height='' alt='Мотель Desert Quail Inn'>
-							<figcaption>
+					<li class="hotels-catalog-item">
+							<img src="img/desert-quail-inn.jpg" width="" height="" alt="Мотель Desert Quail Inn">
+							<div>
 								<h3>Desert Quail Inn</h3>
-								<span class='hotel-type'>мотель</span>
-								<span class='hotel-price'>от 3000 р.</span>
-								<a href='catalog-item.html' class='btn btn-details'>подробнее</a>
-								<a href='catalog-item.html' class='btn btn-reserve'>забронировать</a>
-							</figcaption>
-						</figure>
-						<p class='hotel-rating-area'>
-							<span class='hotel-rank-star'>3*</span>
-							<span class='hotel-rating'>рейтинг: 8,9</span>
+								<span class="hotel-type">мотель</span>
+								<span class="hotel-price">от 3000 р.</span>
+								<a href="catalog-item.html" class="btn btn-details">подробнее</a>
+								<a href="catalog-item.html" class="btn btn-reserve">забронировать</a>
+							</div>
+						<p class="hotel-rating-area">
+							<span class="hotel-rank-star">3*</span>
+							<span class="hotel-rating">рейтинг: 8,9</span>
 						</p>
 					</li>
-					<li class='hotels-catalog-item'>
-						<figure>
-							<img src='img/poco-diablos-villas.jpg' width='' height='' alt='Villa at Poco Diablo'>
-							<figcaption>
+					<li class="hotels-catalog-item">
+							<img src="img/poco-diablos-villas.jpg" width="" height="" alt="Villa at Poco Diablo">
+							<div>
 								<h3>Villa at Poco Diablo</h3>
-								<span class='hotel-type'>апартаменты</span>
-								<span class='hotel-price'>от 2000 р.</span>
-								<a href='catalog-item.html' class='btn btn-details'>подробнее</a>
-								<a href='catalog-item.html' class='btn btn-reserve'>забронировать</a>
-							</figcaption>
-						</figure>
-						<p class='hotel-rating-area'>
-							<span class='hotel-rank-star'>2*</span>
-							<span class='hotel-rating'>рейтинг: 9,2</span>
+								<span class="hotel-type">апартаменты</span>
+								<span class="hotel-price">от 2000 р.</span>
+								<a href="catalog-item.html" class="btn btn-details">подробнее</a>
+								<a href="catalog-item.html" class="btn btn-reserve">забронировать</a>
+							</div>
+						<p class="hotel-rating-area">
+							<span class="hotel-rank-star">2*</span>
+							<span class="hotel-rating">рейтинг: 9,2</span>
 						</p>
 					</li>
 				</ul>
 			</section>
 		</main>
-		<footer class='main-footer'>
+		<footer class="main-footer">
 			<p>#visitsedona</p>
-			<p class='social-block'>
-				<ul>
+				<ul class="social-block">
 					<li>
-						<a href='#' class='social-btn social-btn-tw'>twitter</a>
+						<a href="#" class="social-btn social-btn-tw">twitter</a>
 					</li>
 					<li>
-						<a href='#' class='social-btn social-btn-fb'>facebook</a>
+						<a href="#" class="social-btn social-btn-fb">facebook</a>
 					</li>
 					<li>
-						<a href='#' class='social-btn social-btn-yt'>youtube</a>
+						<a href="#" class="social-btn social-btn-yt">youtube</a>
 					</li>
 				</ul>
-			</p>
-			<p class='copyright-block'>
+			<p class="copyright-block">
 				<span>Website by</span>
-				<a href='https://htmlacademy.ru/intensive/htmlcss'>HTML Academy</a>
+				<a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
 			</p>
 		</footer>
 	</body>
