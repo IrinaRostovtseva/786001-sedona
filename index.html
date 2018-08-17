@@ -94,12 +94,11 @@
 					</li>
 				</ul>
 			</section>
-			<!-- Вариант разметки блока поиска, включая карту -->
 			<section class="search-block">
 				<div class="search-block-header">
 					<h2 class="section-title">Заинтересовались?</h2>
 					<p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц</p>
-					<span class="modal-open btn">Поиск гостиницы в Седоне</span>
+          <button class="modal-open">Поиск гостиницы в Седоне</button>
 				</div>
 				<img src="img/map.png" width="1200" height="593" alt="карта">
 			</section>
@@ -124,7 +123,22 @@
 		</footer>
 		<section class="modal modal-search">
 			<h2 class="visually-hidden">Поиск гостиницы</h2>
-			<!-- форма для поиска гостиницы  -->
+      <form action="https://echo.htmlacademy.ru" method="post" class="hotel-search-form">
+        <p class="search-item">
+          <label for="arrival-date">Дата заезда:</label>
+          <input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
+        </p>
+        <p class="search-item">
+          <label for="departure-date">Дата выезда:</label>
+          <input type="text" name="departure-date" id="departure-date" placeholder="4 июля 2017">
+        <p class="search-item">
+          <label for="adult-amount">Взрослые:</label>
+          <input type="number" name="adult-amount" id="adult-amount" min="1" step="1" placeholder="2">
+          <label for="children-amount">Дети:</label>
+          <input type="number" name="children-amount" id="children-amount" min="0" step="1" placeholder="1">
+        </p>
+        <button type="submit" class="btn">Найти</button>
+      </form>
 		</section>
   </body>
 </html>
