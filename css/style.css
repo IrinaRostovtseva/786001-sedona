@@ -4,6 +4,8 @@ body {
   line-height: 21px;
   color: #000000;
   text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
   background-color: #f2f2f2;
 }
 .main-header {
@@ -39,4 +41,44 @@ body {
 }
 .site-navigation-current {
   color: #766357;
+}
+.greeting {
+  /*height: 509px;*/
+  background-color: #749bbd;
+  background-image: url("../img/polygon_mask.svg"),
+  url("../img/background_photo2.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom,
+                      50% -55px;
+}
+.features {
+  color: #000000;
+}
+.features div {
+  background-color: #ffffff;
+}
+.features b {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.features p {
+  font-size: 14px;
+  line-height: 26px;
+}
+.features-list {
+  list-style: none;
+  background-color: #eeeeee;
+}
+.item-title {
+  font-size: 21px;
+  font-weight: bold;
+}
+.feature-item-photo div{
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+.reason-description-list {
+  list-style: none;
+  background-color: #ffffff;
 }
