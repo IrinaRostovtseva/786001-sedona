@@ -19,6 +19,8 @@ body {
   background-color: #ffffff;
 }
 .site-navigation {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .site-navigation-item {
@@ -166,6 +168,7 @@ body {
 .main-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
@@ -273,13 +276,33 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 .search-block-filters {
+  padding-top: 28px;
+  padding-bottom: 31px;
   color: #ffffff;
   background-color: #495158;
   background-image: url("../img/filter_background_1200.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
 }
+.wrapper {
+  display: flex;
+  width: 1054px;
+  margin: 0 auto;
+}
+.search-filter-form .infrastructure{
+  flex-basis: 150px;
+  margin-right: 103px;
+}
+.search-filter-form .accomodation-type {
+    flex-basis: 150px;
+  margin-right: auto;
+}
+.column-range {
+  flex-basis: 330px;
+}
 .filter-group {
+  margin: 0;
+  padding: 0;
   border: none;
   text-align: left;
 }
@@ -300,16 +323,31 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
-.hotels-catalog .found {
+.hotels-catalog-header {
+  padding: 30px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.hotels-catalog-header .wrapper {
+  align-items: center;
+}
+.hotels-catalog-header .found {
+  margin-right: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
-.hotels-catalog .sorting,
-.hotels-catalog .type-sorting{
+.hotels-catalog-header .sorting,
+.hotels-catalog-header .type-sorting{
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
+}
+.sorting {
+  margin-right: auto;
 }
 .sorting a {
   text-decoration: none;
@@ -337,8 +375,22 @@ body {
   
 }*/
 .hotels-catalog-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   color: #333333;
+}
+.hotels-catalog-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.hotels-catalog-item img {
+  margin-right: 30px;
+}
+.hotel-info {
+  flex-basis: 258px;
+  margin-right: auto;
 }
 .item-title a {
   text-decoration: none;
@@ -373,28 +425,4 @@ body {
 .hotel-rating-area .hotel-rating{
   color: #666666;
   background-color: #f4f4f4;
-}
-/*для сеток*/
-.main-navigation,
-.logo{
-  outline: 3px solid yellowgreen;
-  outline-offset: 4px;
-}
-section {
-  outline: 3px solid gold;
-  outline-offset: 4px;
-}
-li {
-  outline: 2px solid deeppink;
-  outline-offset: 1px;
-}
-div:not(.container) {
-  outline: 2px solid purple;
-}
-fieldset {
-  outline: 2px solid lime;
-}
-form {
-  outline: 2px solid teal;
-  outline-offset: 3px;
 }
