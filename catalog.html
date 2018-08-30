@@ -53,14 +53,22 @@
             <div class="column-range"> 
               <fieldset class="filter-group cost-per-day">
                 <legend>Стоимость в сутки (Р):</legend>
-                <p>
-                  <output><span>От</span></output>
-                  <output><span>До</span></output>
-                </p>
-                <label for="low-limit-cost" class="visually-hidden"></label>
-                <input type="range" name='low-limit-cost' id="low-limit-cost" min="0" max="5000" step="500" value="0">
-                <label for="high-limit-cost" class="visually-hidden"></label>
-                <input type="range" name='high-limit-cost' id="high-limit-cost" min="0" max="5000" step="500" value="3000">
+                <div class="cost-range-display">
+                  <label class="min-cost">От
+                    <input type="text" name="cost-min" value="0">
+                  </label>
+                  <label class="max-cost">До
+                    <input type="text" name="cost-max" value="3000">
+                  </label>
+                </div>
+                <div class="cost-range">
+                  <div class="scale">  
+                    <div class="bar">
+                      <div class="control-element min-cost-control"></div>
+                      <div class="control-element max-cost-control"></div>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
               <button type="submit" class="btn show-btn">Показать</button>
             </div>  
@@ -80,8 +88,8 @@
                 <a href="#">по рейтингу</a>
               </p>
               <p class="type-sorting">
-                <a href="#" class="type-sorting-arrow arrow-up">по возрастанию</a>
-                <a href="#" class="type-sorting-arrow arrow-down">по убыванию</a>
+                <a href="#" class="type-sorting-arrow arrow-up"><span class="visually-hidden">по возрастанию</span></a>
+                <a href="#" class="type-sorting-arrow arrow-down active"><span class="visually-hidden">по убыванию</span></a>
               </p>
             </div>
           </div>
@@ -97,7 +105,7 @@
                     <a href="catalog-item.html" class="btn btn-reserve">забронировать</a>
                   </div>
                 <p class="hotel-rating-area">
-                  <span class="hotel-rank-star">4*</span>
+                  <span class="hotel-rank-star four-star"><span class="visually-hidden">4*</span></span>
                   <span class="hotel-rating">рейтинг: 8,5</span>
                 </p>
               </div>
@@ -113,7 +121,7 @@
                   <a href="catalog-item.html" class="btn btn-reserve">забронировать</a>
                 </div>
                 <p class="hotel-rating-area">
-                  <span class="hotel-rank-star">3*</span>
+                  <span class="hotel-rank-star three-star"><span class="visually-hidden">3*</span></span>
                   <span class="hotel-rating">рейтинг: 8,9</span>
                 </p>
               </div>  
@@ -129,7 +137,7 @@
                   <a href="catalog-item.html" class="btn btn-reserve">забронировать</a>
                 </div>
                 <p class="hotel-rating-area">
-                  <span class="hotel-rank-star">2*</span>
+                  <span class="hotel-rank-star two-star"><span class="visually-hidden">2*</span></span>
                   <span class="hotel-rating">рейтинг: 9,2</span>
                 </p>
               </div>  
