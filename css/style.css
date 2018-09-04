@@ -211,8 +211,8 @@ input[type="checkbox"].visually-hidden {
   padding: 48px 60px 58px;
 }
 .feature-item:last-child div {
-  padding-left: 77px;
   padding-right: 73px;
+  padding-left: 77px;
 }
 .item-title {
   margin: 0;
@@ -247,7 +247,6 @@ input[type="checkbox"].visually-hidden {
       -ms-flex-pack: justify;
 
   -ms-flex-preferred-size: 1200px;
-
       flex-basis: 1200px;
   -webkit-box-pack: justify;
           justify-content: space-between;
@@ -264,12 +263,7 @@ input[type="checkbox"].visually-hidden {
   color: #ffffff;
 
   -ms-flex-preferred-size: 400px;
-
       flex-basis: 400px;
-}
-.feature-item-photo:first-child div {
-  padding-left: 55px;
-  padding-right: 55px;
 }
 .feature-item-photo img {
   position: absolute;
@@ -679,7 +673,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .person-amount-group input {
-  padding-left: 12px;
+  padding-left: 15px;
 }
 
 .person-amount-group label {
@@ -801,7 +795,6 @@ input[type="checkbox"].visually-hidden {
   display: flex;
 
   -ms-flex-wrap: wrap;
-
       flex-wrap: wrap;
 }
 .search-filter-form .infrastructure {
@@ -1124,7 +1117,7 @@ input[type="checkbox"]:disabled + label::after {
   display: -ms-flexbox;
   display: flex;
   margin-right: auto;
-  width: 258px;
+  width: 260px;
 
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1156,7 +1149,6 @@ input[type="checkbox"]:disabled + label::after {
   margin-right: 6px;
 
   -ms-flex-preferred-size: 110px;
-
       flex-basis: 110px;
 }
 
@@ -1178,7 +1170,7 @@ input[type="checkbox"]:disabled + label::after {
 
 .btn-reserve {
   margin-top: 5px;
-  padding: 3px 16px;
+  padding: 3px 17px;
   background-color: #766357;
 }
 
@@ -1197,7 +1189,7 @@ input[type="checkbox"]:disabled + label::after {
   display: flex;
       -ms-flex-pack: end;
   margin: 0;
-  width: 110px;
+  width: 111px;
 
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1211,7 +1203,7 @@ input[type="checkbox"]:disabled + label::after {
   display: inline-block;
   height: 18px;
   background-image: url("../img/rank_star.svg");
-  background-position: 0 50%;
+  background-position: 0 40%;
   background-repeat: space;
 }
 
@@ -1228,8 +1220,8 @@ input[type="checkbox"]:disabled + label::after {
 }
 
 .hotel-rating-area .hotel-rating {
-  padding: 3px 0;
-  width: 100%;
+  padding: 3px 10px 3px 17px;
+  width: 90px;
   background-color: #f4f4f4;
   color: #666666;
   text-align: center;
