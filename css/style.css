@@ -620,7 +620,6 @@ input[type="checkbox"].visually-hidden {
 }
 /*стили для полей с датами*/
 .date-block {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -630,6 +629,9 @@ input[type="checkbox"].visually-hidden {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
           justify-content: space-between;
+}
+.date-block div{
+  position: relative;
 }
 .search-item .date-field {
   padding-right: 35px;
