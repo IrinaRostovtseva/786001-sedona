@@ -355,23 +355,29 @@ input[type="checkbox"].visually-hidden {
 
 .search-block-header {
   position: relative;
-  padding-top: 50px;
   background-color: #ffffff;
   color: #333333;
 }
 
 .section-title {
+  position: relative;
+  z-index: 20;
   margin: 0;
-  margin-bottom: 25px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  background-color: #ffffff;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
 }
 
 .search-block-header > p {
-  margin: 0 auto;
-  margin-bottom: 49px;
-  width: 560px;
+  position: relative;
+  z-index: 20;
+  margin: 0 310px;
+  padding-bottom: 49px;
+  width: 580px;
+  background-color: #ffffff;
 }
 
 .btn {
@@ -389,6 +395,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .modal-operator {
+  position: relative;
+  z-index: 20;
   padding: 30px 85px;
   width: 568px;
   background-color: #766357;
@@ -544,25 +552,88 @@ input[type="checkbox"].visually-hidden {
 .copyright-block a:active rect {
   fill: #bdbbbc;
 }
-
+/*анимация для открытия модалки*/
+@-webkit-keyframes appear { 
+  0% {
+    -webkit-transform: translateY(-400px);
+            transform: translateY(-400px); 
+/*    visibility: hidden;*/
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); 
+  }
+}
+@keyframes appear { 
+  0% {
+    -webkit-transform: translateY(-400px);
+            transform: translateY(-400px); 
+/*    visibility: hidden;*/
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); 
+  }
+}
+/*анимация для закрытия модалки*/
+@-webkit-keyframes disappear { 
+  0% {
+    -webkit-transform: translateY(400px);
+            transform: translateY(400px); 
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); 
+  }
+}
+@keyframes disappear { 
+  0% {
+    -webkit-transform: translateY(400px);
+            transform: translateY(400px); 
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); 
+  }
+}
 /*стили для модалки поиска*/
-.modal {
+.modal,
+.modal-open {
   position: absolute;
-  top: 100%;
   left: 50%;
   z-index: 10;
   margin-left: -284px;
   padding: 55px 0;
   width: 568px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-          box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  -webkit-box-shadow: 0 7px 10px rgba(0, 1, 1, 0.15);
+          box-shadow: 0 7px 10px rgba(0, 1, 1, 0.15);
   color: #000000;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
 }
-
+/*правило для закрытия модалки*/
+.modal {
+  bottom: 1px;
+  -webkit-animation-name: disappear;
+          animation-name: disappear;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+/*правило для выезда модалки*/
+.modal-open {
+  top: 100%;
+  min-height: 290px;
+  -webkit-animation-name: appear;
+          animation-name: appear;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
 .hotel-search-form {
   display: -webkit-box;
   display: -ms-flexbox;
