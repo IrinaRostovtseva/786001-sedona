@@ -635,6 +635,7 @@ input[type="checkbox"].visually-hidden {
           animation-timing-function: ease-in;
 }
 .hotel-search-form {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -850,7 +851,50 @@ input[type="checkbox"].visually-hidden {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
-
+@keyframes error {
+  0% {
+    transform: scale(0);    
+  }
+  50% {
+    transform: scale(1.1);
+  } 
+  100% {
+    transform: scale(1.1);    
+  }
+}
+.error-message::after {
+  content: "Заполните, пожалуйста, все поля";
+  position: absolute;
+  top: 0;
+  left: 480px;
+  padding: 8px 15px;
+  width: 250px;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  border-radius: 3px;
+  border: 3px solid #766357;
+  animation-name: error;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-in-out;
+}
+.error-message::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 469px;
+  width: 0;
+  height: 0;
+  border: 11px solid #766357;
+  border-left-width: 0;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  animation-name: error;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-in-out;
+}
+/*блок с фильтрами*/
 .search-block-filters {
   padding-top: 28px;
   padding-bottom: 31px;
@@ -932,18 +976,6 @@ input[type="checkbox"]:checked + label::before {
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-
-/*
-input[type="checkbox"]:disabled + label::after { 
-  position: absolute;
-  top: -2px;
-  left: 0;
-  width: 27px;
-  height: 23px;
-  content: "";
-  opacity: 70%;
-}
-*/
 /*стили для блока с кастомным ползунком*/
 .column-range {
   -ms-flex-preferred-size: 318px;
