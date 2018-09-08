@@ -403,7 +403,9 @@ input[type="checkbox"].visually-hidden {
   font-size: 21px;
   line-height: 26px;
 }
-
+.search-block-header iframe {
+  border-width: 0;
+}
 .modal-operator:hover {
   background-color: #604e43;
 }
