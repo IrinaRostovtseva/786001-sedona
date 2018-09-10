@@ -113,6 +113,7 @@ input[type="checkbox"].visually-hidden {
   display: inline-block;
   padding: 15px 0;
   color: #000000;
+  vertical-align: middle;
   text-decoration: none;
 }
 
@@ -167,6 +168,7 @@ input[type="checkbox"].visually-hidden {
   display: inline-block;
   margin-bottom: 26px;
   color: #000000;
+  vertical-align: middle;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -232,6 +234,7 @@ input[type="checkbox"].visually-hidden {
 .feature-item span {
   display: inline-block;
   margin-bottom: 23px;
+  vertical-align: middle;
 }
 
 .feature-item p {
@@ -397,6 +400,8 @@ input[type="checkbox"].visually-hidden {
 .modal-operator {
   position: relative;
   z-index: 20;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 30px 85px;
   width: 568px;
   background-color: #766357;
@@ -641,9 +646,9 @@ input[type="checkbox"].visually-hidden {
   top: 100%;
   left: 50%;
   z-index: 10;
-  min-height: 290px;
   margin-left: -284px;
   padding: 55px 0;
+  min-height: 290px;
   width: 568px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 10px rgba(0, 1, 1, 0.15);
@@ -870,48 +875,71 @@ input[type="checkbox"].visually-hidden {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
-@keyframes error {
+@-webkit-keyframes error {
   0% {
-    transform: scale(0);    
+    -webkit-transform: scale(0);
+            transform: scale(0);    
   }
   50% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   } 
   100% {
-    transform: scale(1.1);    
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);    
+  }
+}
+@keyframes error {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);    
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  } 
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);    
   }
 }
 .error-message::after {
-  content: "Заполните, пожалуйста, все поля";
   position: absolute;
   top: 0;
   left: 480px;
   padding: 8px 15px;
   width: 250px;
-  background-color: #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 21px;
-  border-radius: 3px;
   border: 3px solid #766357;
-  animation-name: error;
-  animation-duration: 0.15s;
-  animation-timing-function: ease-in-out;
+  border-radius: 3px;
+  background-color: #ffffff;
+  content: "Заполните, пожалуйста, все поля";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  -webkit-animation-name: error;
+          animation-name: error;
+  -webkit-animation-duration: 0.15s;
+          animation-duration: 0.15s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 .error-message::before {
-  content: "";
   position: absolute;
   top: 10px;
   left: 469px;
   width: 0;
   height: 0;
   border: 11px solid #766357;
-  border-left-width: 0;
   border-top-color: transparent;
   border-bottom-color: transparent;
-  animation-name: error;
-  animation-duration: 0.15s;
-  animation-timing-function: ease-in-out;
+  border-left-width: 0;
+  content: "";
+  -webkit-animation-name: error;
+          animation-name: error;
+  -webkit-animation-duration: 0.15s;
+          animation-duration: 0.15s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 /*блок с фильтрами*/
 .search-block-filters {
@@ -982,18 +1010,25 @@ input[type="checkbox"].visually-hidden {
   position: absolute;
   top: -2px;
   left: 0;
-  width: 27px;
+  z-index: 1;
+  width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
   background-position: 0 50%;
   background-repeat: no-repeat;
   content: "";
 }
-
+input[type="checkbox"]:focus + label::before {
+  outline: 2px solid #81b3d2;
+}
 input[type="checkbox"]:checked + label::before {
+  width: 27px;
   background-image: url("../img/checkbox-on.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+input[type="checkbox"]:disabled + label::before {
+  opacity: 0.35;
 }
 /*стили для блока с кастомным ползунком*/
 .column-range {
@@ -1180,6 +1215,7 @@ input[type="checkbox"]:checked + label::before {
   border: 6px solid #cacaca;
   border-right-color: transparent;
   border-left-color: transparent;
+  vertical-align: middle;
   text-decoration: none;
   font-size: 12px;
   -webkit-transform: scaleY(2);
@@ -1327,6 +1363,7 @@ input[type="checkbox"]:checked + label::before {
   background-image: url("../img/rank_star.svg");
   background-position: 0 40%;
   background-repeat: space;
+  vertical-align: top;
 }
 
 .four-star {
