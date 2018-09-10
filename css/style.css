@@ -599,8 +599,8 @@ input[type="checkbox"].visually-hidden {
   }
 }
 /*стили для модалки поиска*/
-.modal,
-.modal-open {
+.js .modal,
+.js .modal-open {
   position: absolute;
   left: 50%;
   z-index: 10;
@@ -635,6 +635,23 @@ input[type="checkbox"].visually-hidden {
           animation-duration: 0.5s;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
+}
+.no-js .modal {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 10;
+  min-height: 290px;
+  margin-left: -284px;
+  padding: 55px 0;
+  width: 568px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 7px 10px rgba(0, 1, 1, 0.15);
+          box-shadow: 0 7px 10px rgba(0, 1, 1, 0.15);
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
 }
 .hotel-search-form {
   position: relative;

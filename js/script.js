@@ -1,3 +1,5 @@
+document.documentElement
+        .classList.replace('no-js', 'js');
 var modalControl = document.querySelector(".modal-operator");
 var popup = document.querySelector(".modal");
 var arriveDate = popup.querySelector("[name=arrival-date]");
